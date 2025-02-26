@@ -1,10 +1,14 @@
 using MiniSiparisYonetimi.DAL;
+using MiniSiparisYonetimi.Models;
+using MiniSiparisYonetimi.Controllers;
+
+
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddScoped<ProductDAL>();
+
 builder.Services.AddScoped<ProductDAL>();
 
 builder.Services.AddScoped<ProductDAL>(provider =>

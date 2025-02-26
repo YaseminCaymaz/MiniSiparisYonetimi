@@ -26,5 +26,8 @@ public class OrderController : ControllerBase
         }
     }
 
-    // Diğer API metotları buraya eklenebilir.
+    [HttpGet]
+    public IActionResult OrderList(){
+        return Ok(_orderBLL.GetOrders());
+    }
 }

@@ -48,4 +48,9 @@ public class OrderBLL
         }  
         return null;
     }
+
+    internal List<Order> GetOrders()
+    {
+        return _orderDAL.GetOrders();        
+    }
 }

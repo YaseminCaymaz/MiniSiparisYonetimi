@@ -4,6 +4,7 @@ using MiniSiparisYonetimi.Models;
 namespace MiniSiparisYonetimi.Controllers;
 public class CustomerController : Controller
 {
+  
  // product/index
     public IActionResult Index()
     {
@@ -30,5 +31,14 @@ public class CustomerController : Controller
 
         return View(customers);
     }
-    // Diğer API metotları buraya eklenebilir.
+    
+    //   En cok siparis veren musteriler ekrana yazmak için gönderilir
+    
+       public IActionResult CustomerList()
+         {
+            // veritabanına baglı olsaydı bu metodla front-end kısmına bilgileri GET ile gönderilecekti
+          //return View(_customerBLL.EnCokSiparisVerenMusteriler());
+          return View();
+         } 
+  
 }
