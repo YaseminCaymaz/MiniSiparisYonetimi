@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MiniSiparisYonetimi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5b02f99815464508fe50fa51f857bd301b5f1c5b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cbf493171ab8a02e65722ebc207f23b9802be8e6")]
 [assembly: System.Reflection.AssemblyProductAttribute("MiniSiparisYonetimi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MiniSiparisYonetimi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
