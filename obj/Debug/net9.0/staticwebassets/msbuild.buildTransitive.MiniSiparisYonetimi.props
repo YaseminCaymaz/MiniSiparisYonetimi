@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\MiniSiparisYonetimi.props" />
+</Project>

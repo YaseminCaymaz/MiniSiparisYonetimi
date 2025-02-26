@@ -1,0 +1,49 @@
+@model List<Customer>
+
+    <h1>Müşteri Listesi</h1>
+    <div class="customer-container">
+        @foreach (var customer in Model)
+        {
+            <div class="card" style="width: 18rem;">
+              <div class="avatar">
+                <div class="avatar-circle" style="background-color: rgb(142, 189, 228); width: 135px; height: 135px; margin: 5px; font-size: 60px; display: flex; justify-content: center; align-items: center;">
+                   <b> @customer.Name[0]@customer.Surname[0]</b>
+                </div>
+            </div>
+                <div class="card-body">
+                  <h5 class="card-title">Adı:@customer.Name</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">Soyadı: @customer.Surname</h6>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">Email: @customer.Email</h6>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">Telefon: @customer.Phone</h6>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary" ><b>Profile Git</b></button>
+                  </div>
+                </div>
+              </div>
+
+        }
+        <style>
+            .customer-container {
+                display: flex; /* Flexbox'ı etkinleştir */
+                flex-wrap: wrap; /* Gerekirse kartların alt satıra geçmesini sağla */
+                justify-content: space-around; /* Kartları eşit aralıklarla yerleştir */
+                gap: 20px; /* Kartlar arasında boşluk bırak */
+            }
+              /* CSS stilleri buraya */
+        .customer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .avatar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        </style>
+        
+    </div>
+  

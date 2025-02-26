@@ -1,0 +1,37 @@
+@model Product
+
+<div class="container pb-3 pt-5">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title"><b>Ürün Ekle</b></h5>
+      <form id="myForm" class="row g-3">
+        <div class="col-md-6">
+          <label for="inputProductName" class="form-label"><b>Ürün Adı</b></label>
+          <input type="text" class="form-control" id="inputProductName" name="productName">
+        </div>
+        <div class="col-md-6">
+          <label for="inputPrice" class="form-label"><b>Fiyat</b></label>
+          <input type="text" class="form-control" id="inputPrice" placeholder="₺" name="price">
+        </div>
+        <div class="col-12">
+          <label for="inputDescription" class="form-label"><b>Ürün Açıklaması</b></label>
+          <input type="text" class="form-control" id="inputDescription" placeholder="" name="description">
+        </div>
+
+        <div class="col-12">
+          <button type="button" class="btn btn-primary" onclick="document.getElementById('myForm').reset() "><b>Ekle</b></button>
+        </div>
+        <div class="col-12">
+          <button type="button" class="btn btn-primary" onclick="window.location.href = '/product/list'"><b>Urun Listesi</b></button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+  function clearFormAndRedirect() {
+    document.getElementById("myForm").reset(); // Formu sıfırla
+   
+  }
+</script>

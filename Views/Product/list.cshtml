@@ -1,0 +1,30 @@
+@model List<Product>
+
+    <h1>Ürün Listesi</h1>
+    <div class="urun-container">
+        @foreach (var product in Model)
+        {
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">@product.Name</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">Ürün Açıklaması:</h6>
+                  <p class="card-text">@product.Description</p>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">Ürün Fiyatı:</h6>
+                  <p class="card-text">@product.Price ₺</p>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary" ><b>Sepete Ekle</b></button>
+                  </div>
+                </div>
+              </div>
+
+        }
+        <style>
+            .urun-container {
+                display: flex; /* Flexbox'ı etkinleştir */
+                flex-wrap: wrap; /* Gerekirse kartların alt satıra geçmesini sağla */
+                justify-content: space-around; /* Kartları eşit aralıklarla yerleştir */
+                gap: 20px; /* Kartlar arasında boşluk bırak */
+            }
+        </style>
+        
+    </div>
